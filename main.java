@@ -115,13 +115,9 @@ class credit_card
         return credit;
     }
     void success(String type)
-    {
         System.out.println("Given Credit Card Number might be of " + type + " Card");
-    }
     void err(String type)
-    {
         System.out.println("Given Credit Card Number is not of " + type + " Card");
-    }
     void mi(credit)
     {
         first=credit.charAt(0);
