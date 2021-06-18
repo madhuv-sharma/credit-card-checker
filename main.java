@@ -118,7 +118,7 @@ class credit_card
         System.out.println("Given Credit Card Number might be of " + type + " Card");
     void err(String type)
         System.out.println("Given Credit Card Number is not of " + type + " Card");
-    void mi(credit)
+    String getMII(credit)
     {
         first=credit.charAt(0);
         switch(first)
@@ -168,6 +168,7 @@ class credit_card
         else
             mii = "Unknown";
         */
+       return mii;
     }
     /*
     void check()
@@ -204,5 +205,6 @@ class credit_card
     {
         credit = input();
         System.out.println(credit);
+        mii = getMII(credit);
     }
 }
