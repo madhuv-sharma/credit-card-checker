@@ -48,63 +48,61 @@ class credit_card
                 continue;
             }
             for(i=0; i<len; i++)
-            {
                 if(!(credit[i].isdigit()))
                 {
                     System.out.println("All characters should be digits!");
                     bool=False;
                     break;
                 }
-            }
         }
         switch(ch)
         {
             case '1':
-                type = "American Express"
-                b1 = credit.charAt(0) == '3' 
-                b2 = credit.charAt(1) == '4' || credit.charAt(1) == '7'
-                b3 = len==15
-                bool = b1 && b2 && b3
+                type = "American Express";
+                b1 = credit.charAt(0) == '3';
+                b2 = credit.charAt(1) == '4' || credit.charAt(1) == '7';
+                b3 = len==15;
+                bool = b1 && b2 && b3;
                 if(bool)
                     success(type);
                 else
                     error(type);
                 break;
             case '2':
-                type = "Diners Club/ Carte Blance"
-                b1 = credit.charAt(0) == '3' 
-                b2 = credit.charAt(1) == '0' || credit.charAt(1) == '6' || credit.charAt(1) == '8'
-                b3 = len==14
-                bool = b1 && b2 && b3
+                type = "Diners Club/ Carte Blance";
+                b1 = credit.charAt(0) == '3';
+                b2 = credit.charAt(1) == '0' || credit.charAt(1) == '6' || credit.charAt(1) == '8';
+                b3 = len==14;
+                bool = b1 && b2 && b3;
                 if(bool)
                     success(type);
                 else
                     error(type);
                 break;
             case '3':
-                type = "Discover"
-                b1 = credit.charAt(0) == '6' 
-                b2 = len==16
-                bool = b1 && b2
-                if(credit.charAt(0)=='6' && credit.length() == 16)
+                type = "Discover";
+                b1 = credit.charAt(0) == '6';
+                b2 = len==16;
+                bool = b1 && b2;
+                if(bool)
                     success(type);
                 else
                     error(type);
                 break;
             case '4':
-                type = "Master"
-                b1 = credit.charAt(0) == '5' 
-                b2 = len==16
-                if(credit.charAt(0)=='5' && credit.length() == 16)
+                type = "Master";
+                b1 = credit.charAt(0) == '5';
+                b2 = len==16;
+                if(bool)
                     success(type);
                 else
                     error(type);
                 break;
             case '5':
-                type = "Visa"
-                b1 = credit.charAt(0) == '4' 
-                b2 = len==13 || len==16
-                bool = b1 && b2
+                type = "Visa";
+                b1 = credit.charAt(0) == '4';
+                b2 = len==13 || len==16;
+                bool = b1 && b2;
                 if(bool)
                     success(type);
                 else
