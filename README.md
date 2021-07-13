@@ -1,4 +1,4 @@
-# credit-card-checker
+# Credit Card Checker
 
 	MII Info:
 	
